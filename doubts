@@ -1,0 +1,97 @@
+doubts 
+
+when in navigation bar creation 
+*html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>uHost</title>
+    <link rel="shortcut icon" href="favicon.png">
+     <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+      <div class="main-header">
+        <div> 
+          <a href="index.html">
+              uHost
+          </a>
+        </div>
+        
+     <nav>
+         <ul>
+             <li>
+                 <a href="packages/index.html">Packages</a>
+             </li>
+             <li>
+                 <a href="customers/index.html">Customers </a>
+             </li>
+             <li>
+                 <a href="start-hosting/index.html">Start Hosting</a>
+             </li>             
+
+
+         </ul>
+
+
+     </nav>
+
+    </div>
+    <main>
+        <div id="product-overview">
+            <h1>Get the freedom you deserve.</h1>
+        </div>
+        <div  class="plans">
+            <h1>choose your plan</h1>
+        </div>
+    </main>
+</body>
+
+</html>
+*css
+*{
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+#product-overview {
+	padding: 25px;
+    background: #ff1b68;
+    width: 100%;
+    height: 528px;
+    padding: 10px;
+    
+}
+
+.section-title {
+    color: #2ddf5c;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+.main-header {
+	width: 100%;
+	background-color: #2ddf5c;
+	padding: 8px 16px;
+}
+/* h1 {
+    font-family: sans-serif;
+} */
+
+when we remove pading for main-header there is a white bar in between and when its applied the white space dissapears
+
+main nav items ke display properties ko vary krke dekho to usse display mei kya variation aa raha hai
+
+why we cannot inherit the color of text in header section
+**use of float and text align in nav bar creation  
+
+when we hover over a button the size of the button increases a bit

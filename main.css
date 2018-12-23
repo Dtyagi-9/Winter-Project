@@ -1,0 +1,164 @@
+
+#product-overview {
+	padding: 25px;
+    background:url("freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 25%;
+    width: 100vw;
+    height: 55vh;
+    padding: 10px;
+    margin-top: 40px;
+    position: relative;
+
+}
+
+.section-title {
+    color: black;
+    text-align: center;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+.slogan{
+position: absolute;
+bottom: 0%;
+left: 5%;
+
+}
+.plans{
+	margin:auto;
+	text-align: center;
+
+}
+.plan{
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+	background-color: #1ED760;
+	text-align: center;
+	padding: 20px;
+	margin: 10px 10px;
+	width: 30%;
+	color: white;
+	display: inline-block;
+	vertical-align: middle;
+}
+.plan-annotation{
+	margin: 0px 80px;
+	padding: 10px;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	box-shadow:  2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+.recommended-plan{
+  color: black;
+
+}
+
+.features{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.features li{
+	margin: 8px 0;
+}
+
+
+.plan-title{
+	color: black;
+
+}
+.plan-price{
+	color: #0e4f1f;
+
+}
+
+.customer-attractions{
+	font-size: 20px;
+	background-color: rgba(204,204,204,0.5);;
+	color: rgba(0,0,0,0.8);
+	text-align:center;
+	padding: 0 50px;
+}
+
+.customer-attractions__items{
+margin: 0;
+}
+.customer-attractions li{
+  list-style: none;
+}
+.key-features{
+	vertical-align: top;
+	display: inline-block;
+	padding: 70px;
+
+}
+
+.footer-items{
+	margin: 0;
+}
+.feature-image{
+	background-color: #ffcede;
+	width: 228px;
+	border: 2px solid #424242;
+	border-radius: 50%;
+	height: 228px;
+	margin: auto;
+	padding: 40px;
+	/*this auto automatically calculates the empty space and center alligns the div */
+}
+
+
+
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 20;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}

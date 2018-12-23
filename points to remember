@@ -1,0 +1,54 @@
+**how to include a font in your file (using google fonts) ek link head mein include krdo and bs 
+
+**margin collapsing 
+when we have *two adjacent elements  *2 elements in a bigger element *(exceptional case)when there is no content in the element
+
+the borders b/w 2 containers collapse and the bigger one b/w the 2 collapsing borders is visible 
+
+**application of height and width 
+when we apply height and width it is applicable on the content and if we apply the borders and padding also then the total dimensions of the box will become abrupt 
+i.e default box-sizing:content-box;
+if box-sizing:border-box; then the height and width it is applicable on the borders inclusive content this is very regular practice 
+
+*section is a block level element so that is why we have default as border-boxing
+
+**the *{ } selector overrides the inherited and default settings 
+
+*display there are 2 prop inline and block
+inline mein we can have multiple elements on the same line but in case of block only one element can be there in a line 
+in inline we cannot apply paddings and margin 
+therefore we have a property of inlne block where elements can be there in a single line and paddings and margin can be applied on them
+display:none removes from document flow but the place of element is not blocked to block the place of the element  use visibility:hidden;
+** caniuse.com to check wether a particular property can be applied in a browser      
+* when we click a button the focus psedo class gets activated(outline property use)
+* box shadow property
+*!important overrides all the specifiers
+**cursor property where we used pointer value 
+**package block ko pure to link banana hai
+*z index property works only when position property is specified and is other than static
+**position  
+     *fixed -fixes element wherever it is  
+     positioning context is the viewport 
+     *absolute- iss se saare ek jagah aa jate hain(takes element out of document flow ) positioning context is the closest ancestor to which positioning is applied if none of the ancestors have positioning applied then the html body is the context
+
+     *relative - iss se iske andar jo elements hain unke liye ye viewport set ho jaega jese badge set krne ke liye kiya tha
+     agar relative krke top: 20px karoge to jo original document flow mein iski position hai uske respect mein move krne lagega
+     basically relative means apni initial location ke respect mein kese move kr raha hai isme parent element ke bahar bhi chala jata hai 
+    ** if you want the element should not leave the parent then use overflow properties  
+
+
+**overflow property: what we want to do with the element when the element exits the parent element(one problem with the body element)
+
+	**sticky:combination of relative and fixed
+
+**background size :cover-pura container occupy kar lega  contain-jitna size of image hoga utna karega (may leave empty space in the surrounding element)
+**applying linear and radial gradient functions
+
+*styling svg(scalable vector graphics) using the fill and stroke properties  
+
+**how diffrent values of %vary with the position (if position is relative then % is applicable on content+padding if fixed then refrence is viewport)
+**drawback of the em value (how it inherits its size )
+ 
+*-*vmin takes 80% of the minimum viewport dimensions vh and vw create scroll bar problems in windows
+
+**the querySelector function selects only one element but  we may require multiple selections then we can use the querySelectorAll function
