@@ -66,37 +66,45 @@ body::-webkit-scrollbar{
 .main-nav{
 	
 	display: inline-block;
-	width: calc(100% - 150px);
+	width: calc(100% - 170px);
 	text-align: right;
     vertical-align: middle;
 	padding: 4px;
 }
 .mobile-nav {
-  	display: none;
+  display: none;
   position: fixed;
   z-index: 101;
   top: 0;
   left: 0;
-  background: black;
-  width: 80%;
+  background: rgba(0,0,0,0.65);
+  width: 20%;
   height: 100vh;
 }
 
 .mobile-nav__items {
-  width: 90%;
+  width: 65%;
   height: 100%;
   list-style: none;
   margin: 10% auto;
-  padding: 0;
+  padding: 0px;
   text-align: center;
 }
 
 .mobile-nav__item {
-  margin: 1rem 0;
+  
+  margin: 2rem 0;
+  box-sizing: border-box;
+  padding: 1.7rem;
 }
 
 .mobile-nav__item a {
   font-size: 1.5rem;
+}
+.mobile-nav__item a:hover,.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active{
+	
+	border-bottom: 2px solid white;	
 }
 .logo{
 	display: inline-block;
@@ -123,17 +131,15 @@ body::-webkit-scrollbar{
 	color: grey;
 	border-bottom: 5px solid grey;
 }
-.main-nav-item--sh a,
-.mobile-nav__item--cta a{
+.main-nav-item--sh a{
 	color: white;
 	background:#1ED760;
 	border-radius: 28px;
 
 }
+
 .main-nav-item--sh a:hover,
-.main-nav-item--sh a:active,
-.mobile-nav__item--cta a:hover,
-.mobile-nav__item--cta a:active
+.main-nav-item--sh a:active
 {
     font-weight: bolder;
 	border: none;
@@ -174,5 +180,5 @@ color: #ccc;
 }
 
 .open{
-	display: block;
+	display: block !important;
 }
