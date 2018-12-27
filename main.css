@@ -31,6 +31,7 @@ font-size: 1.6rem;
 @media (min-width: 40rem) {
   #product-overview{
     height: 55vh;
+    background-position: 50% 25%;
    }
    
 
