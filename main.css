@@ -1,4 +1,8 @@
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
 #product-overview {
   padding: 25px;
     background:url("freedom.jpg");
@@ -32,6 +36,7 @@ font-size: 1.6rem;
   #product-overview{
     height: 55vh;
     background-position: 50% 25%;
+    
    }
    
 
@@ -59,12 +64,37 @@ font-size: 1.6rem;
   vertical-align: middle;
 }
 .plan-annotation{
-  margin: 0px 80px;
-  padding: 10px;
+  /*margin: 0px 80px;
+  padding: 10px;*/
+  margin: 0px 2rem;
+  font-size: 1.7rem;
   color: white;
   background-color: black;
+  min-width: 241.5px;
   border-radius: 10px;
   box-shadow:  2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 40rem) {
+  .plan{
+    display: block;
+    width: 100%;
+  }
+  .plan-annotation{
+    max-width:  255px;
+  }
+ 
+  .key-features{
+    display: block;
+    
+  }
+
+
+
+
+
+
+
 }
 .recommended-plan{
   color: black;
@@ -96,6 +126,7 @@ font-size: 1.6rem;
   color: rgba(0,0,0,0.8);
   text-align:center;
   padding: 0 50px;
+  width: 100vw;
 }
 
 .customer-attractions__items{

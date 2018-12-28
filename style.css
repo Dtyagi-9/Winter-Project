@@ -32,8 +32,9 @@ body::-webkit-scrollbar{
 	top: 0;
 	margin: 0;
 	width: 100vw;
+	height: 50px;
 	background-color: black;
-	padding: 4px 16px;
+	padding: 12px 16px;
 }
 .toggle-button {
   width: 3rem;
@@ -160,6 +161,7 @@ body::-webkit-scrollbar{
 	background-color: black;
 	color: white;
     text-align: center;
+    width: 100vw;
 
 }
 .footer-item {
@@ -181,4 +183,20 @@ color: #ccc;
 
 .open{
 	display: block !important;
+}
+@media (max-width: 40rem) {
+	.main-nav{
+		display: none;
+	}
+   .footer-item{
+   	display: block;
+   }
+}
+@media (min-width: 40rem) {
+	.toggle-button{
+		display: none;
+	
+
+	}
+
 }
