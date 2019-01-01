@@ -116,8 +116,7 @@ main {
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
-  color: #ff1b68;
-  background: white;
+  color: black;
   border: none;
 }
 
