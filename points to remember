@@ -52,3 +52,6 @@ display:none removes from document flow but the place of element is not blocked 
 *-*vmin takes 80% of the minimum viewport dimensions vh and vw create scroll bar problems in windows
 
 **the querySelector function selects only one element but  we may require multiple selections then we can use the querySelectorAll function
+
+
+**difrence between outline and a border
