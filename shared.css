@@ -31,13 +31,18 @@ main {
   background: black;
   padding: 0.5rem 1rem;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
+/* 
+solved using flexbox now  
 .main-header > div {
-/* here ^ this selector is used to select the div inside the main header*/ 
+ here ^ this selector is used to select the div inside the main header 
   display: inline-block;
   vertical-align: middle;
 }
+*/
 
 .toggle-button {
   width: 3rem;
@@ -67,12 +72,12 @@ main {
   font-weight: bold;
   height: 2.5rem;
   /* width: 20px; */
-  display: inline-block;
-  vertical-align: middle;
 }
-
+/* the hieght from this place has been removed and added directly to the image because if we dont do it and use flexbox 
+for the navbar then img take the actual size */
 .main-header__brand img {
-  height: 100%;
+  height: 2.5rem;
+  vertical-align: middle;/*added to solve the toggle button issue*/
   /* width: 100%; */
 }
 
@@ -83,11 +88,11 @@ main {
 .main-nav__items {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none; 
+  display: flex;
 }
 
 .main-nav__item {
-  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -132,10 +137,11 @@ main {
   }
 
   .main-nav {
-    display: inline-block;
+    /*display: inline-block;
     text-align: right;
     width: calc(100% - 44px);
-    vertical-align: middle;
+    vertical-align: middle;*/
+    display: flex;
   }
 }
 
@@ -179,12 +185,18 @@ main {
 }
 
 .mobile-nav__items {
-  width: 90%;
+  width: 100%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  /*
   padding: 0;
-  text-align: center;
+  text-align: center;*/
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .mobile-nav__item {
