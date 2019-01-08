@@ -3,6 +3,7 @@ main {
 }
 
 .testimonial {
+
     font-size: 1.2rem;
   }
   
@@ -63,6 +64,9 @@ main {
 
   @media (min-width: 40rem) {
     .testimonial {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       margin: 3rem auto;
       max-width: 1500px;
     }

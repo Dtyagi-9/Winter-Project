@@ -92,19 +92,38 @@
   .plan__list {
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .plan {
-    display: inline-block;
+   /* display: inline-block;
+       vertical-align: middle;
+   */
+   display: flex;
+   flex-direction: column;
+   align-content: center;
     width: 30%;
-    vertical-align: middle;
+    height: 23rem;
+    margin: 0 1rem; 
     min-width: 13rem;
     max-width: 25rem;
-  }
 
+  } 
+    
   .plan--highlighted {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 25rem;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+    z-index: -1;
   }
+  .plan__price{
+    margin: 0; 
+  }
+  .plan__title{
+    margin: 0.1rem; 
+  }
+  /*isme margin set krna hai between the items */
 }
 
 #key-features {
@@ -144,10 +163,16 @@
 
 @media (min-width: 40rem) {
   .key-feature {
-    display: inline-block;
+    /*display: inline-block;*/
+     
     width: 30%;
     max-width: 25rem;
     vertical-align: top;
+  }
+  .key-feature__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 

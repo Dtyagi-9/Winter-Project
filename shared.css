@@ -156,11 +156,16 @@ for the navbar then img take the actual size */
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-footer__link {
   display: block;
   margin: 1rem 0;
+
 }
 
 .main-footer__link a {
@@ -233,8 +238,12 @@ for the navbar then img take the actual size */
 }
 
 @media (min-width: 40rem) {
-  .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+  .main-footer__links {
+      flex-direction: row;
+      flex-wrap: wrap;
+
   }
+    .main-footer__link {
+    margin: 0 40px;
+    }
 }
