@@ -88,22 +88,25 @@
   margin: 0.5rem 0;
 }
 
+
 @media (min-width: 40rem) {
   .plan__list {
     width: 100%;
     text-align: center;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
   }
 
   .plan {
-   /* display: inline-block;
+   /* display: inline-block; */
        vertical-align: middle;
-   */
+   
+   /*
    display: flex;
    flex-direction: column;
-   align-content: center;
+   align-content: center;*/
     width: 30%;
     height: 23rem;
     margin: 0 1rem; 
@@ -113,10 +116,10 @@
   } 
     
   .plan--highlighted {
+
     height: 25rem;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
-    z-index: -1;
-  }
+      }
   .plan__price{
     margin: 0; 
   }
@@ -185,8 +188,8 @@
   display: none;
   z-index: 200;
   top: 20%;
-  left: 30%;
-  width: 40%;
+  left: 25%;
+  width: 50%;
   background: white;
   padding: 1rem;
   border: 1px solid #ccc;
@@ -227,4 +230,25 @@
 .modal__action--negative:active {
   background: #ff5454;
   border-color: #ff5454;
+}
+
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+}
+
+.button:focus {
+  outline: none;
 }
