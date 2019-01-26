@@ -8,6 +8,7 @@ main{
 }
 
 .signup-form{
+	display: grid;
 	padding: 2rem;
 	background-color: #d8f3df; 
 }
@@ -56,6 +57,7 @@ main{
 }
 @media (min-width: 40rem) {
 	.signup-form{
+		grid-template-columns: 10rem auto;
 		margin: auto;
 		width: 30rem;
 	}

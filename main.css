@@ -10,7 +10,7 @@
     background-clip: border-box; */
   /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
   /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
-  width: 100vw;
+  width: 99.2vw;
   height: 33vh;
   /* border: 5px dashed red; */
   position: relative;
@@ -185,12 +185,14 @@
 
 .modal {
   position: fixed;
-  display: none;
+  opacity: 0;
+  transform: translateY(-4rem);
   z-index: 200;
   top: 20%;
   left: 25%;
   width: 50%;
   background: white;
+  transition: opacity 500ms ease-in , transform 500ms ease-in;   
   padding: 1rem;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);

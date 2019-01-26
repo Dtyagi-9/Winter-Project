@@ -5,7 +5,7 @@ var selectPlanButtons = document.querySelectorAll(".plan button");
 var toggleButton = document.querySelector(".toggle-button");
 var mobileNav = document.querySelector(".mobile-nav");
 
-// console.dir(backdrop.style['background-image']);
+// console.dir(backdrop.style['background-image']); 
 
 // console.dir(backdrop);
 for (var i = 0; i < selectPlanButtons.length; i++) {
@@ -14,7 +14,11 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
     // backdrop.style.display = "block";
     // modal.className = 'open'; // This will actually overwrite the complete class list
     modal.classList.add("open");
-    backdrop.classList.add("open");
+    backdrop.style.display='block';
+    setTimeout(function(){
+  backdrop.classList.add("open");
+  },5);
+
   });
 }
 
@@ -34,12 +38,19 @@ function closeModal() {
   if (modal) {
     modal.classList.remove("open");
   }
+  backdrop.style.display='none';
+  setTimeout(function(){
   backdrop.classList.remove("open");
+  },5);
 }
 
 toggleButton.addEventListener("click", function() {
   // mobileNav.style.display = 'block';
   // backdrop.style.display = 'block';
   mobileNav.classList.add("open");
+  backdrop.style.display='block';
+  setTimeout(function(){
   backdrop.classList.add("open");
+
+  },5);
 });

@@ -55,3 +55,12 @@ display:none removes from document flow but the place of element is not blocked 
 
 
 **difrence between outline and a border
+
+
+** regular expressions using javascript onchangeevent()
+
+**wireframing  directory structure
+border attachment N: fixed
+
+in grid 
+when we use the repeat function and we want to keep the number of columns in the viewport dynamic then we use the auto-fil property then if we want that we dont need more than a certain amount of content the  we can use the max-width for the containing div   auto-fit property also centers the content
