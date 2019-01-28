@@ -187,12 +187,12 @@
   position: fixed;
   opacity: 0;
   transform: translateY(-4rem);
+  transition: opacity 500ms ease-in , transform 500ms ease-in;   
   z-index: 200;
   top: 20%;
   left: 25%;
   width: 50%;
   background: white;
-  transition: opacity 500ms ease-in , transform 500ms ease-in;   
   padding: 1rem;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);

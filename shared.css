@@ -85,7 +85,7 @@ for the navbar then img take the actual size */
 
 .main-nav {
   display: none;
-
+  
 }
 
 .main-nav__items {
@@ -182,7 +182,8 @@ for the navbar then img take the actual size */
 }
 
 .mobile-nav {
-  display: none;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-out;
   position: fixed;
   z-index: 101;
   top: 0;
@@ -240,6 +241,7 @@ for the navbar then img take the actual size */
     display: block !important;
     opacity: 1 !important;
     transform: translateY(0) !important;  
+
 }
 
 @media (min-width: 40rem) {
