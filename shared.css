@@ -125,7 +125,11 @@ for the navbar then img take the actual size */
   padding: 0.5rem 1rem;
   border-radius: 16px;
 }
-
+.main-nav__item--cta {
+  animation: wiggle 200ms 1.7s 4 alternate ;
+  /*here after alternate if we use forwards then the final state is kept and 
+  if we use backwards the initial state is kept*/
+}
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
@@ -253,4 +257,14 @@ for the navbar then img take the actual size */
     .main-footer__link {
     margin: 0 40px;
     }
+}
+
+@keyframes wiggle{
+from{
+  transform: rotateZ(0);
+}
+to{
+  transform: rotateZ(10deg);
+}
+
 }
