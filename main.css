@@ -47,6 +47,10 @@
   padding: 1rem;
   margin: 0.5rem 0;
   width: 100%;
+
+}
+.plan:hover{
+    animation: enlarge 400ms 0s ease-out forwards;
 }
 
 .plan--highlighted {
@@ -93,6 +97,9 @@
   .plan__list {
     width: 100%;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -173,6 +180,10 @@
     vertical-align: top;
   }
   .key-feature__list{
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -254,4 +265,14 @@
 
 .button:focus {
   outline: none;
+}
+
+@keyframes enlarge{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+
+    }
 }
